@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 1508544392}
   - component: {fileID: 1508544394}
   - component: {fileID: 1508544393}
+  - component: {fileID: 1508544395}
   m_Layer: 3
   m_Name: Bird
   m_TagString: Untagged
@@ -841,6 +842,36 @@ PolygonCollider2D:
       - {x: 0.56, y: -2.53}
       - {x: 0.62, y: -2.51}
   m_UseDelaunayMesh: 0
+--- !u!114 &1508544395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508544389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 5ce247c1b21a94f40b42abc4c083c80a, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1532321515
 GameObject:
   m_ObjectHideFlags: 0
