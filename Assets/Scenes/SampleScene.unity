@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 294222942060688027, guid: 273af1a0bd1b24d43a43fcdfd64e3f41, type: 3}
-  spawnRate: 2
+  spawnRate: 2.48
   heightOffset: 10
 --- !u!4 &109483578
 Transform:
@@ -185,7 +185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &253219430
 RectTransform:
   m_ObjectHideFlags: 0
@@ -239,6 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: 0
   scoreText: {fileID: 1532321516}
+  gameOverScreen: {fileID: 253219429}
 --- !u!4 &449966570
 Transform:
   m_ObjectHideFlags: 0
@@ -596,6 +597,7 @@ GameObject:
   - component: {fileID: 1508544391}
   - component: {fileID: 1508544392}
   - component: {fileID: 1508544394}
+  - component: {fileID: 1508544395}
   - component: {fileID: 1508544393}
   m_Layer: 3
   m_Name: Bird
@@ -711,6 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flapStrength: 20
+  isAlive: 1
 --- !u!58 &1508544394
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -745,7 +748,42 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.09, y: -0.46}
   serializedVersion: 2
-  m_Radius: 2.15
+  m_Radius: 1.92
+--- !u!58 &1508544395
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508544389}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.14, y: 1.24}
+  serializedVersion: 2
+  m_Radius: 0.88
 --- !u!1 &1532321515
 GameObject:
   m_ObjectHideFlags: 0
